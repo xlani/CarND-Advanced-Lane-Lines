@@ -1,4 +1,4 @@
-**Advanced Lane Finding Project**
+# Advanced Lane Finding Project #
 
 The goals / steps of this project are the following:
 
@@ -49,7 +49,12 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result:
 
+Camera raw image:
+
 ![][image1]
+
+Applied distortion correction:
+
 ![][image2]
 
 ### Pipeline (single images)
@@ -149,9 +154,7 @@ I implemented this step in lines 190 through 201 in my code in `images.py`. Here
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's the video:
-
-![][video1]
+Here's a [link to my video result](./project_output.mp4)
 
 ---
 
