@@ -122,7 +122,7 @@ Warped image:
 
 ![][image9]
 
-And for the example image it looks like this:
+And for the example image (binary mode) it looks like this:
 
 ![][image10]
 
