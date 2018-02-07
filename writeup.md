@@ -128,7 +128,7 @@ And for the example image (binary mode) it looks like this:
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-To identify the lane-line pixels I used the Sliding-Window-Search approach out of lesson 33 of the project in combination with fitting a polynomial. To get a more robust output I used the class `tracker` and two global variables to store the recent found lanes. I averaged over the last 10 to minimize the impact of single bad frames.
+To identify the lane-line pixels I used the Sliding-Window-Search approach out of lesson 33 of the project slides in combination with fitting a polynomial. To get a more robust output I used the class `tracker` and two global variables to store the recent found lanes. I averaged over the last 10 to minimize the impact of single bad frames.
 
 The code is in lines 137 through 188 in `images.py` (corresponding lines 158 through 182 in `video.py`) and in `tracker.py`.  
 
@@ -136,7 +136,7 @@ The code is in lines 137 through 188 in `images.py` (corresponding lines 158 thr
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-The radius of curvature is given in meters assuming the curve of the road follows a circle.
+The radius of curvature is calculated as stated in lesson 35 in the project slides.
 
 For the position of the vehicle, I assumed the camera is mounted at the center of the car and the deviation of the midpoint of the lane from the center of the image is the offset.
 
